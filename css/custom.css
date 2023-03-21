@@ -1,0 +1,68 @@
+.bg-custom2 {
+  background-color: #fee6b1;
+}
+
+.rounded {
+  border-radius: 100%;
+}
+
+.btn-custom1 {
+  background-color: #fee6b1;
+  color: #374b4d;
+}
+
+.btn-custom1:hover {
+  background-color: #eabd5e;
+}
+
+.bg-custom1 {
+  background-color: #374b4d;
+  color: #fee6b1;
+}
+
+.btn-custom-nav {
+  background-color: #222a27;
+  color: #fee6b1;
+}
+
+.btn-custom-nav:hover {
+  background-color: #374b4d;
+  color: #fee6b1;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.bg-hero {
+  background: radial-gradient(#374b4d, #222a27);
+  height: 100vh;
+}
+
+.navbar-nav li {
+  font-size: 20px;
+}
+
+.navbar-nav li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+footer {
+  color: #fee6b1;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+a {
+  color: #fee6b1;
+}
