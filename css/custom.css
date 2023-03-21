@@ -1,5 +1,9 @@
+.bg-custom2-old {
+  background-color: #fee6b1;
+}
 .bg-custom2 {
   background-color: #fee6b1;
+  background: radial-gradient(#fee6b1, #eabd5e);
 }
 
 .rounded {
@@ -7,12 +11,12 @@
 }
 
 .btn-custom1 {
-  background-color: #fee6b1;
+  background-color: #eabd5e;
   color: #374b4d;
 }
 
 .btn-custom1:hover {
-  background-color: #eabd5e;
+  background-color: #fee6b1;
 }
 
 .bg-custom1 {
