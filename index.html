@@ -40,10 +40,10 @@
               <a class="nav-link" href="#services">Dienstleistungen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Über uns</a>
+              <a class="nav-link" href="#about">Über uns</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontakte</a>
+              <a class="nav-link" href="#contacts">Kontakte</a>
             </li>
           </ul>
 
@@ -60,26 +60,30 @@
             <h1 class="display-4 text-white mb-3">
               <span>Hundepflege und Salon</span> <span>in Münster</span>
             </h1>
-            <h2 class="text-white mb-3 d-none d-sm-block">
+            <h2 class="text-white mb-3">
               Wir kümmern uns liebevoll um das Aussehen und Wohlbefinden Ihres
               Hundes
             </h2>
-            <button
-              href=""
-              class="btn btn-lg btn-custom1 font-weight-bold mt-3 mt-md-4 px-4"
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#termin"
-            >
-              <strong>Termin vereinbaren</strong>
-            </button>
-            <a
-              href="#services"
-              class="btn btn-lg btn-secondary font-weight-bold mt-3 mt-md-4 px-4"
-            >
-              <strong>Dienstleistungen</strong>
-            </a>
+            <!--CTA buttons-->
+            <div class="cta-buttons">
+              <button
+                href=""
+                class="btn btn-lg btn-custom1 font-weight-bold mt-3 mt-md-4 px-4"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#termin"
+              >
+                <strong>Termin vereinbaren</strong>
+              </button>
+              <a
+                href="#services"
+                class="btn btn-lg btn-secondary font-weight-bold mt-3 mt-md-4 px-4"
+              >
+                <strong>Dienstleistungen</strong>
+              </a>
+            </div>
+            <!--End CTA buttons-->
           </div>
         </div>
         <div class="col-12 col-lg-4">
@@ -341,29 +345,23 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-12">
+          <div class="col-lg-3 col-12 d-flex flex-column">
             <h3>Newsletter</h3>
             <form action="">
-              <div class="row">
-                <div class="col-8">
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="name@example.com"
-                    />
-                  </div>
-                </div>
-                <div class="col-2">
-                  <button
-                    class="btn btn-secondary"
-                    type="submit"
-                    value="Newsletter"
-                  >
-                    Newsletter
-                  </button>
-                </div>
+              <div class="newsletter">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+                <button
+                  class="btn btn-secondary"
+                  type="submit"
+                  value="Newsletter"
+                >
+                  Newsletter
+                </button>
               </div>
             </form>
           </div>

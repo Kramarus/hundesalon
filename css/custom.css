@@ -70,3 +70,45 @@ footer ul li {
 a {
   color: #fee6b1;
 }
+
+@media screen and (min-width: 992px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter .form-control {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .newsletter {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .newsletter .form-control {
+    flex: 2;
+    margin-right: 16px;
+  }
+
+  .newsletter .btn {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter .form-control {
+    margin-bottom: 8px;
+  }
+}
