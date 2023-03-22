@@ -96,6 +96,10 @@ a {
   .newsletter .btn {
     flex: 1;
   }
+
+  footer .links {
+    text-align: right;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -111,4 +115,16 @@ a {
   .newsletter .form-control {
     margin-bottom: 8px;
   }
+
+  footer .links {
+    text-align: center;
+  }
+  footer .contacts {
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+
+#services .col {
+  margin: 0;
 }
