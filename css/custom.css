@@ -128,3 +128,15 @@ a {
 #services .col {
   margin: 0;
 }
+
+section#thanks {
+  height: 50vh;
+}
+
+section#thanks .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
