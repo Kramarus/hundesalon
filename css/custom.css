@@ -140,3 +140,13 @@ section#thanks .container {
   text-align: center;
   height: 100%;
 }
+
+.service-card {
+  height: 100%;
+}
+
+.service-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
