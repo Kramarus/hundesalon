@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Hundesalon in Münster</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -117,17 +118,95 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-custom1">Save changes</button>
+          <div class="modal-body">
+            <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
+                    <fieldset>
+                      <legend>Für Person</legend>
+                      <input
+                        type="text"
+                        class="form-control mb-2"
+                        name="Name"
+                        placeholder="Name"
+                        required
+                        >
+                        <input type="text" class="form-control mb-2" name="Email/Handy" placeholder="Email oder Handynummer" required>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Termunwunsch</legend>
+                      <p>Unsere Öffnungszeiten: <br>von Dienstag bis Samstag (10:00 bis 18:00).</p>
+                      <input id="date" type="date" class="form-control datepicker mb-2" name="Datum">
+                      
+                      <div class="form-group mb-2">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="Zeit" id="inlineRadio1" value="Vor 14:00">
+                          <label class="form-check-label" for="inlineRadio1">Vor 14:00</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="Zeit" id="inlineRadio2" value="Nach 14:00">
+                          <label class="form-check-label" for="inlineRadio2">Nach 14:00</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="Zeit" id="inlineRadio3" value="Egal wann">
+                          <label class="form-check-label" for="inlineRadio3">Egal wann</label>
+                        </div>
+                      </div>
+                      
+                    </fieldset>
+                    <fieldset>
+                      <legend>Dienstleistungen</legend>
+                      <div class="form-control mb-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" value="Waschen / Föhnen">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Waschen / Föhnen
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" value="Bürsten / Entfilzen">
+                          <label class="form-check-label" for="defaultCheck2">
+                            Bürsten / Entfilzen
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" value="Schneiden / Trimmen">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Schneiden / Trimmen
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" value="Krallen schneiden">
+                          <label class="form-check-label" for="defaultCheck2">
+                            Krallen schneiden
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <!--Tech Info-->
+                    <input type="hidden" name="_subject" value="Neuer Termin">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="#"> <!--Change this!!!-->
+                    <textarea class="form-control mb-2" type="textarea" rows="3" placeholder="Kommentar"></textarea>
+                    <div>
+                      <button
+                      class="btn btn-custom1"
+                      type="submit"
+                      value="Newsletter"
+                    >
+                      Senden
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                    Close
+                  </button>
+                    </div>
+                    
+                </form>
           </div>
+         
         </div>
       </div>
     </div>
@@ -280,7 +359,18 @@
         <h2 class="mb-3 text-center">Kontakte</h2>
         <div class="row">
           <div class="col-md-6 col-12">
-            <form>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.54809523097!2d7.663241224904398!3d51.996889837937445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9bb2bbb97a6c1%3A0x3395a192647e615c!2sHundesalon%20Emika!5e0!3m2!1sde!2sde!4v1679478665815!5m2!1sde!2sde"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-md-6 col-12">
+            <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
               <div class="form-group my-3">
                 <label for="formGroupExampleInput">Ihr Name</label>
                 <input
@@ -297,6 +387,7 @@
                   type="email"
                   class="form-control"
                   id="exampleFormControlInput1"
+                  name="Email"
                   placeholder="name@example.com"
                 />
               </div>
@@ -305,26 +396,19 @@
                 <textarea
                   class="form-control"
                   id="exampleFormControlTextarea1"
+                  name="Nachricht"
                   rows="3"
                 ></textarea>
               </div>
+              <input type="hidden" name="_subject" value="Neue Nachricht">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://google.com/">
               <div class="d-flex justify-content-center">
                 <button type="submit" class="btn btn-secondary mb-2">
                   Senden
                 </button>
               </div>
             </form>
-          </div>
-          <div class="col-md-6 col-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.54809523097!2d7.663241224904398!3d51.996889837937445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9bb2bbb97a6c1%3A0x3395a192647e615c!2sHundesalon%20Emika!5e0!3m2!1sde!2sde!4v1679478665815!5m2!1sde!2sde"
-              width="100%"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
         </div>
       </div>
@@ -360,14 +444,18 @@
               </div>
               <div class="col-lg-4">
                 <h3>Newsletter</h3>
-                <form action="">
+                <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
                   <div class="newsletter">
                     <input
                       type="email"
                       class="form-control"
+                      name="Email"
                       id="exampleFormControlInput1"
                       placeholder="name@example.com"
                     />
+                    <input type="hidden" name="_subject" value="Newsletter">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="#"> <!--Change this!!!-->
                     <button
                       class="btn btn-secondary"
                       type="submit"
@@ -392,5 +480,16 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      const picker = document.getElementById('date');
+       picker.addEventListener('input', function(e){
+         var day = new Date(this.value).getUTCDay();
+         if([0,1].includes(day)){
+           e.preventDefault();
+           this.value = '';
+           alert('Unsere Öffnungszeiten: von Dienstag bis Samstag');
+         }
+       });
+   </script>
   </body>
 </html>
