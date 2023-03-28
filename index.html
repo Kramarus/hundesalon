@@ -106,17 +106,18 @@
       aria-hidden="true"
     >
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content bg-custom1">
           <div class="modal-header">
             <h5 class="modal-title" id="terminTitle">Termin vereinbaren</h5>
-            <button
+            <a
               type="button"
               class="close"
               data-bs-dismiss="modal"
               aria-label="Close"
+              
             >
               <span aria-hidden="true">&times;</span>
-            </button>
+          </a>
           </div>
           <div class="modal-body">
             <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
@@ -212,14 +213,14 @@
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title text-center">Waschen / Föhnen</h5>
+                <h5 class="card-title text-center">Baden / Föhnen</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Das Baden des Hundes ist eine grundlegende Dienstleistung, die in unserem Hundesalon angeboten wird. Das Baden kann je nach Bedarf des Hundes mit speziellen Shampoos und Conditionern durchgeführt werden.<br><br>
                 </p>
                 <div class="d-flex justify-content-center">
-                  <button href="#" class="btn btn-secondary">
-                    Mehr erfahren
+                  <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#termin">
+                    Termin vereinbaren
                   </button>
                 </div>
               </div>
@@ -235,12 +236,12 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Bürsten / Entfilzen</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Eine regelmäßige Bürst- und Kammbehandlung hilft, das Fell des Hundes frei von Knoten und Verfilzungen zu halten und das Fell gesund und glänzend zu halten.<br><br><br>
                 </p>
                 <div class="d-flex justify-content-center">
-                  <button href="#" class="btn btn-secondary">
-                    Mehr erfahren
+                  <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#termin">
+                    Termin vereinbaren
                   </button>
                 </div>
               </div>
@@ -256,12 +257,12 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Schneiden / Trimmen</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Das Schneiden und Trimmen des Fells ist eine weitere wichtige Dienstleistung. Das Ziel ist es, das Fell des Hundes zu formen und zu pflegen, um ein sauberes und gepflegtes Erscheinungsbild zu erzielen.
                 </p>
                 <div class="d-flex justify-content-center">
-                  <button href="#" class="btn btn-secondary">
-                    Mehr erfahren
+                  <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#termin">
+                    Termin vereinbaren
                   </button>
                 </div>
               </div>
@@ -277,12 +278,12 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Krallen schneiden</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Das Schneiden der Krallen ist eine wichtige Dienstleistung, um das Wohlbefinden des Hundes zu gewährleisten. Überlange Krallen können dazu führen, dass der Hund Schwierigkeiten beim Laufen hat und Schmerzen erleidet.
                 </p>
                 <div class="d-flex justify-content-center">
-                  <button href="#" class="btn btn-secondary">
-                    Mehr erfahren
+                  <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#termin">
+                    Termin vereinbaren
                   </button>
                 </div>
               </div>
@@ -291,6 +292,11 @@
         </div>
       </div>
     </section>
+    <!--
+      Zähneputzen: Eine regelmäßige Zahnreinigung ist wichtig, um Zahnprobleme und Mundgeruch beim Hund zu vermeiden. Die Zähne können mit speziellen Hundezahnpasten und -bürsten gereinigt werden.
+      Ohrreinigung: Eine regelmäßige Ohrreinigung kann dazu beitragen, Infektionen und Entzündungen im Ohr des Hundes zu vermeiden. Das Ohr wird mit speziellen Lösungen gereinigt und überschüssiges Wachs und Schmutz entfernt.
+      Fellpflege: Eine professionelle Fellpflege kann das Fell des Hundes gesünder und glänzender machen. Hierbei werden spezielle Pflegeprodukte auf das Fell aufgetragen und sanft eingearbeitet.
+    -->
     <section class="bg-custom1 py-5" id="about">
       <div class="container">
         <h2 class="mb-5 text-center display-4">
