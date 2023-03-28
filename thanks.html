@@ -98,19 +98,19 @@
                     <fieldset>
                       <legend>Termunwunsch</legend>
                       <p>Unsere Öffnungszeiten: <br>von Dienstag bis Samstag (10:00 bis 18:00).</p>
-                      <input id="date" type="date" class="form-control datepicker mb-2" name="Datum" placeholder="Tag wählen">
+                      <input id="date" type="date" class="form-control datepicker mb-2" name="Gewünschtes Datum" placeholder="Tag wählen">
                       
                       <div class="form-group mb-2">
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="Zeit" id="inlineRadio1" value="Vor 14:00">
+                          <input class="form-check-input" type="radio" name="Gewünschte Zeit" id="inlineRadio1" value="Vor 14:00">
                           <label class="form-check-label" for="inlineRadio1">Vor 14:00</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="Zeit" id="inlineRadio2" value="Nach 14:00">
+                          <input class="form-check-input" type="radio" name="Gewünschte Zeit" id="inlineRadio2" value="Nach 14:00">
                           <label class="form-check-label" for="inlineRadio2">Nach 14:00</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="Zeit" id="inlineRadio3" value="Egal wann">
+                          <input class="form-check-input" type="radio" name="Gewünschte Zeit" id="inlineRadio3" value="Egal wann">
                           <label class="form-check-label" for="inlineRadio3">Egal wann</label>
                         </div>
                       </div>
@@ -120,25 +120,25 @@
                       <legend>Dienstleistungen</legend>
                       <div class="form-control mb-2">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" value="Waschen / Föhnen">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" value="Waschen / Föhnen" name="Waschen / Föhnen">
                           <label class="form-check-label" for="defaultCheck1">
                             Waschen / Föhnen
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" value="Bürsten / Entfilzen">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" value="Bürsten / Entfilzen" name="Bürsten / Entfilzen">
                           <label class="form-check-label" for="defaultCheck2">
                             Bürsten / Entfilzen
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" value="Schneiden / Trimmen">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" value="Schneiden / Trimmen" name="Schneiden / Trimmen">
                           <label class="form-check-label" for="defaultCheck1">
                             Schneiden / Trimmen
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" value="Krallen schneiden">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" value="Krallen schneiden" name="Krallen schneiden">
                           <label class="form-check-label" for="defaultCheck2">
                             Krallen schneiden
                           </label>
@@ -149,7 +149,7 @@
                     <!--Tech Info-->
                     <input type="hidden" name="_subject" value="Neuer Termin">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="#"> <!--Change this!!!-->
+                    <input type="hidden" name="_next" value="https://kramarus.github.io/hundesalon/thanks.html"> <!--Change this!!!-->
                     <textarea class="form-control mb-2" type="textarea" rows="3" placeholder="Kommentar" name="Kommentar"></textarea>
                     <div>
                       <button
