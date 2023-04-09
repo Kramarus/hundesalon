@@ -66,8 +66,7 @@
               <span>Hundesalon Emika</span> <span>in Münster</span>
             </h1>
             <h2 class="text-white mb-3">
-              Wir kümmern uns liebevoll um das Aussehen und Wohlbefinden Ihres
-              Hundes
+              Regelmäßige Pflege ist nicht nur die Frage des Aussehens, sondern auch die Frage der Gesundheit, der Hygiene und des Wohlbefinden Ihres Hundes.
             </h2>
             <!--CTA buttons-->
             <div class="cta-buttons">
@@ -122,7 +121,7 @@
           <div class="modal-body">
             <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
                     <fieldset>
-                      <legend>Für Person</legend>
+                      
                       <input
                         type="text"
                         class="form-control mb-2"
@@ -131,8 +130,15 @@
                         required
                         >
                         <input type="text" class="form-control mb-2" name="Email/Handy" placeholder="Email oder Handynummer" required>
-                        <input type="text" class="form-control mb-2" name="Hunderasse" placeholder="Hunderasse" required>
-                        <input type="text" class="form-control mb-2" name="Alter" placeholder="Alter des Hundes" required>
+                        <legend>Ihr Hund</legend>
+                        <div class="row">
+                          <div class="col-8">
+                            <input type="text" class="form-control mb-2" name="Hunderasse" placeholder="Rasse" required>
+                          </div>
+                          <div class="col-4">
+                            <input type="number" class="form-control mb-2" name="Alter" placeholder="Alter" required>
+                          </div>
+                        </div>
                     </fieldset>
                     <fieldset>
                       <legend>Termunwunsch</legend>
@@ -159,16 +165,25 @@
                       <legend>Dienstleistungen</legend>
                       <div class="form-control mb-2">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Waschen / Föhnen" value="Ja"> Waschen / Föhnen
+                          <input class="form-check-input" type="checkbox" name="Baden, Föhnen und Bürsten (BFB)" value="Ja" checked> Baden, Föhnen und Bürsten (BFB)
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Bürsten / Entfilzen" value="Ja"> Bürsten / Entfilzen
+                          <input class="form-check-input" type="checkbox" name="Bürsten / Entfilzen" value="Ja"> Entfernung der Unterwolle
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Schneiden / Trimmen" value="Ja"> Schneiden / Trimmen
+                          <input class="form-check-input" type="checkbox" name="Schneiden / Trimmen" value="Ja"> Scheren
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="Schneiden / Trimmen" value="Ja"> Trimmen
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="Schneiden / Trimmen" value="Ja"> Entfilzen (komplette Schur)
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" name="Krallen schneiden" value="Ja"> Krallen schneiden
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="Krallen schneiden" value="Ja"> Pflege für Welpen (bis 1 Jahr)
                         </div>
                       </div>
                     </fieldset>
@@ -210,9 +225,9 @@
           <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div class="card service-card">
               <div class="card-body">
-                <h5 class="card-title text-center">Baden / Föhnen</h5>
+                <h5 class="card-title text-center">Baden, Föhnen und Bürsten (BFB)</h5>
                 <p class="card-text">
-                  Das Baden des Hundes ist eine grundlegende Dienstleistung, die in unserem Hundesalon angeboten wird. Das Baden kann je nach Bedarf des Hundes mit speziellen Shampoos und Conditionern durchgeführt werden.<br>
+                  Ich beginne mit einem erfrischenden Bad, um das Fell Ihres Hundes zu reinigen und zu revitalisieren. Dann föhne ich das Fell sanft, um es trocken und flauschig zu machen. Schließlich bürste ich das Fell, um es weich und glänzend zu machen und lose Haare zu entfernen.
                 </p>
                 <div class="d-flex justify-content-center">
                   <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
@@ -226,9 +241,9 @@
           <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div class="card service-card">
               <div class="card-body">
-                <h5 class="card-title text-center">Bürsten / Entfilzen</h5>
+                <h5 class="card-title text-center">BFB + Entfernung der Unterwolle</h5>
                 <p class="card-text">
-                  Eine regelmäßige Bürst- und Kammbehandlung hilft, das Fell des Hundes frei von Knoten und Verfilzungen zu halten und das Fell gesund und glänzend zu halten.<br><br>
+                  Ich entferne schonend die Unterwolle von Hunden mit doppelschichtigem Fell, um sie im Sommer von der Hitze zu entlasten. Mit speziellen Werkzeugen und Techniken wird das Fell leichter und luftiger, was Ihrem Hund ein angenehmeres Gefühl gibt und ihn gesünder aussehen lässt.
                 </p>
                 <div class="d-flex justify-content-center">
                   <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
@@ -242,9 +257,41 @@
           <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
             <div class="card service-card">
               <div class="card-body">
-                <h5 class="card-title text-center">Schneiden / Trimmen</h5>
+                <h5 class="card-title text-center">BFB + Scheren</h5>
                 <p class="card-text">
-                  Das Schneiden und Trimmen des Fells ist eine weitere wichtige Dienstleistung. Das Ziel ist es, das Fell des Hundes zu formen und zu pflegen, um ein sauberes und gepflegtes Erscheinungsbild zu erzielen. <br><br>
+                  Ich schere Hunde mit langem oder verfilztem Fell gleichmäßig und professionell, um ihnen eine saubere und ordentliche Erscheinung zu verleihen. Mit meinem Service wird das Fell Ihres Hundes nicht nur gut aussehen, sondern er wird sich auch wohler fühlen und sich leichter bewegen können.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#termin">
+                    Termin vereinbaren
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card service-card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Trimmen</h5>
+                <p class="card-text">
+                  Mein exklusiver Trimmservice für Hunde hält das Fell Ihres Hundes in Topform. Als erfahrener Trimmspezialist biete ich eine schwierige, aber effektive Methode an. Wenn Sie nach einem einzigartigen Service suchen, der Ihrem Hund eine besondere Behandlung bietet, ist mein Trimmservice die perfekte Wahl.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#termin">
+                    Termin vereinbaren
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card service-card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Entfilzen (komplette Schur)</h5>
+                <p class="card-text">
+                  Mein Entfilzungsservice ist ideal für Hunde mit verfilztem Fell. Mit speziellen Werkzeugen und Techniken wird das Fell sanft entwirrt und entfilzt, ohne es zu beschädigen. Ihr Hund wird sich wohler fühlen und gesünder und glücklicher aussehen.
                 </p>
                 <div class="d-flex justify-content-center">
                   <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
@@ -271,12 +318,16 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="col-12 mb-3">
             <div class="card service-card">
+              <div class="card-header bg-danger text-light text-center pt-3">
+                <h4>Rabatt 30%</h4>
+                <p>bis 31 Mai 2023</p>
+              </div>
               <div class="card-body">
-                <h5 class="card-title text-center">Ohrreinigung</h5>
+                <h5 class="card-title text-center">Pflege für Welpen (bis 1 Jahr)</h5>
                 <p class="card-text">
-                  Eine regelmäßige Ohrreinigung kann dazu beitragen, Infektionen und Entzündungen im Ohr des Hundes zu vermeiden. Das Ohr wird mit speziellen Lösungen gereinigt und überschüssiges Wachs und Schmutz entfernt.
+                  Unser Pflegeservice für Welpen (bis 1 Jahr) bietet eine sanfte und schonende Pflege, die speziell auf die Bedürfnisse junger Hunde zugeschnitten ist. Wir verwenden nur die besten Produkte, um die Gesundheit und das Wohlbefinden Ihres Welpen zu gewährleisten. Zusätzlich bieten wir derzeit einen Rabatt von 30% auf diesen Service an. Bringen Sie Ihren Welpen zu uns und lassen Sie ihn verwöhnen!
                 </p>
                 <div class="d-flex justify-content-center">
                   <button href="#" class="btn btn-secondary" data-bs-toggle="modal"
@@ -287,6 +338,16 @@
               </div>
             </div>
           </div>
+          <div class="col-12 col-lg-6">
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-12 col-lg-4">
+            <img class="img-fluid rounded-circle" src="./img/maltipo.png" alt="">
+          </div>
+          <div class="col-4"></div>
         </div>
       </div>
     </section>
@@ -302,7 +363,7 @@
         </h2>
         <div class="row">
           <div class="col-lg-6 col-12 d-flex align-items-center">
-            <div>
+            <div class="fs-5">
               <p>
                 Ich bin stolz darauf, eine führende Rolle in der
                 Hundepflege-Branche zu spielen. Meine Einrichtungen sind modern und sauber, um sicherzustellen,
@@ -398,11 +459,25 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="container text-center">
+        <button
+        class="btn btn-lg btn-custom1 font-weight-bold mt-3 mt-md-4 px-4"
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#termin"
+      >
+        <strong>Termin vereinbaren</strong>
+      </button>
+      </div>
+      
+    </section>
     <footer class="py-5">
       <div class="container">
         <div class="row my-5">
           <div class="col-lg-3 col-12 d-flex justify-content-center">
-            <img src="./img/logo.png" alt="" height="256px" />
+            <img class="img-fluid rounded-circle" src="./img/logo.png" alt="" height="256px" />
           </div>
           <div class="col-lg-9 col-12">
             <div class="row">
