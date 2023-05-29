@@ -1,687 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hundesalon in Münster</title>
-    <link rel="icon" type="image/x-icon" href="/img/logo 21.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/custom.css?v=1.112" />
-  </head>
-  <body class="bg-hero">
-    <nav class="navbar navbar-expand-lg bg-custom2">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <span><img src="./img/logo 21.png" alt="" height="96px" /></span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hundesalon in Münster</title>
+  <link rel="icon" type="image/x-icon" href="/img/logo 21.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/custom.css?v=1.112" />
+</head>
+
+<body class="bg-hero">
+  <nav class="navbar navbar-expand-lg bg-custom2">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span><img src="./img/logo 21.png" alt="" height="96px" /></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Hauptseite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Dienstleistungen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Über mich</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Kontakte</a>
+          </li>
+        </ul>
+
+        <div class="nav-item mr-3 d-none">Öffnungszeiten</div>
+
+        <button class="btn btn-lg btn-custom-nav" data-bs-toggle="modal" data-bs-target="#termin">
+          Termin vereinbaren
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Hauptseite</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Dienstleistungen</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Über mich</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacts">Kontakte</a>
-            </li>
-          </ul>
-
-          <div class="nav-item mr-3 d-none">Öffnungszeiten</div>
-
-          <button
-            class="btn btn-lg btn-custom-nav"
-            data-bs-toggle="modal"
-            data-bs-target="#termin"
-          >
-            Termin vereinbaren
-          </button>
-        </div>
-      </div>
-    </nav>
-    <section class="container" id="hero">
-      <div class="row my-5">
-        <div class="col-12 col-lg-8 align-middle d-flex align-items-center">
-          <div class="">
-            <h1 class="display-4 text-white mb-3">
-              <span>Hundesalon Emika</span> 
-                
-            </h1>
-            <h2 class="text-white mb-3">
-              Jeder Hund, unabhängig von Art, Rasse, Geschlecht und Alter, sollte regelmäßig gepflegt werden.
-              Und diese Pflege ist weder überflüssig, noch eine reine Frage der Ästhetik, sondern eine notwendige Maßnahme für die Gesundheit des Hundes.
-            </h2>
-            <!--CTA buttons-->
-            <div class="cta-buttons">
-              <button
-                class="btn btn-lg btn-custom1 font-weight-bold mt-3 mt-md-4 px-4"
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#termin"
-              >
-                <strong>Termin vereinbaren</strong>
-              </button>
-              <a
-                href="#services"
-                class="btn btn-lg btn-secondary font-weight-bold mt-3 mt-md-4 px-4"
-              >
-                <strong>Dienstleistungen</strong>
-              </a>
-            </div>
-            <!--End CTA buttons-->
-          </div>
-        </div>
-        <div class="col-12 col-lg-4">
-          <img class="img-fluid" src="./img/herodog.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="termin"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="terminTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content bg-custom1">
-          <div class="modal-header">
-            <h5 class="modal-title" id="terminTitle">Termin vereinbaren</h5>
-            <a
-              type="button"
-              class="close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              
-            >
-              <span aria-hidden="true">&times;</span>
-          </a>
-          </div>
-          <div class="modal-body">
-            <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
-                    <fieldset>
-                      
-                      <input
-                        type="text"
-                        class="form-control mb-2"
-                        name="Name"
-                        placeholder="Name"
-                        required
-                        >
-                        <input type="text" class="form-control mb-2" name="Email/Handy" placeholder="Email oder Handynummer" required>
-                        <legend>Ihr Hund</legend>
-                        <input type="text" class="form-control mb-2" name="Hundename" placeholder="Name des Hundes" required>
-                        <div class="row">
-                          <div class="col-8">
-                            <input type="text" class="form-control mb-2" name="Hunderasse" placeholder="Rasse" required>
-                          </div>
-                          <div class="col-4">
-                            <input type="text" class="form-control mb-2" name="Alter" placeholder="Alter" required>
-                          </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                      <legend>Terminwunsch</legend>
-                      <p>Unsere Öffnungszeiten: <br>von Dienstag bis Samstag (10:00 bis 18:00).</p>
-                      <input id="date" type="date" class="form-control datepicker mb-2" name="Gewünschtes Datum" placeholder="Tag wählen">
-                      
-                      <div class="form-group mb-2">
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="Gewünschte Zeit" id="inlineRadio1" value="Vor 14:00">
-                          <label class="form-check-label" for="inlineRadio1">Vor 14:00</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="Gewünschte Zeit" id="inlineRadio2" value="Nach 14:00">
-                          <label class="form-check-label" for="inlineRadio2">Nach 14:00</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="Gewünschte Zeit" id="inlineRadio3" value="Egal wann">
-                          <label class="form-check-label" for="inlineRadio3">Egal wann</label>
-                        </div>
-                      </div>
-                      
-                    </fieldset>
-                    <fieldset>
-                      <legend>Dienstleistungen</legend>
-                      <div class="form-control mb-2">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Basispflege" value="Ja" checked> Basispflege
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Basispflege + Entfernung der Unterwolle" value="Ja"> Basispflege + Entfernung der Unterwolle
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Basispflege + Rasieren mit Schermaschine" value="Ja"> Basispflege + Rasieren mit Schermaschine
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Basispflege + Frisur" value="Ja"> Basispflege + Frisur
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Express-Häutung" value="Ja"> Express-Häutung
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Basispflege + Trimmen" value="Ja"> Basispflege + Trimmen
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Welpeneingewöhnung" value="Ja"> Welpeneingewöhnung
-                        </div>
-                      </div>
-                    </fieldset>
-
-                    <!--Tech Info-->
-                    <input type="hidden" name="_subject" value="Neuer Termin">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://kramarus.github.io/hundesalon/thanks.html"> <!--Change this!!!-->
-                    <textarea class="form-control mb-2" type="textarea" rows="3" placeholder="Kommentar" name="Kommentar"></textarea>
-                    <div>
-                      <button
-                      class="btn btn-custom1"
-                      type="submit"
-                      value="Newsletter"
-                    >
-                      Senden
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                    Close
-                  </button>
-                    </div>
-                    
-                </form>
-          </div>
-         
-        </div>
       </div>
     </div>
+  </nav>
+  <section class="container" id="hero">
+    <div class="row my-5">
+      <div class="col-12 col-lg-8 align-middle d-flex align-items-center">
+        <div class="">
+          <h1 class="display-4 text-white mb-3">
+            <span>Hundesalon Emika</span>
 
-    <!--Services-->
-    <section class="bg-custom2 py-5" id="services">
-      <div class="container">
-        <h2 class="mb-5 text-center">Dienstleistungen</h2>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="card service-card">
-              <div class="card-body">
-                <h5 class="card-title text-center">Basispflege</h5>
-                
-                <p class="card-text">
-                  Die Basispflege umfasst: Ohr- und Augenhygiene, Krallenschneiden, 
-                  trimmen des Intimbereichs, Fellschnitt an Augen und 
-                  Pfoten (falls erforderlich). 
-                  Waschen in drei Stufen mit Superreinigungsshampoo, Pflegeshampoo 
-                  und Conditioner. Föhnen und Kämmen.
-                </p>
-                <p class="text-center">
-                  Preise*   
+          </h1>
+          <h2 class="text-white mb-3">
+            Jeder Hund, unabhängig von Art, Rasse, Geschlecht und Alter, sollte regelmäßig gepflegt werden.
+            Und diese Pflege ist weder überflüssig, noch eine reine Frage der Ästhetik, sondern eine notwendige Maßnahme
+            für die Gesundheit des Hundes.
+          </h2>
+          <!--CTA buttons-->
+          <div class="cta-buttons">
+            <button class="btn btn-lg btn-custom1 font-weight-bold mt-3 mt-md-4 px-4" type="button"
+              class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#termin">
+              <strong>Termin vereinbaren</strong>
+            </button>
+            <a href="#services" class="btn btn-lg btn-secondary font-weight-bold mt-3 mt-md-4 px-4">
+              <strong>Dienstleistungen</strong>
+            </a>
+          </div>
+          <!--End CTA buttons-->
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <img class="img-fluid" src="./img/herodog.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="termin" tabindex="-1" role="dialog" aria-labelledby="terminTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-custom1">
+        <div class="modal-header">
+          <h5 class="modal-title" id="terminTitle">Termin vereinbaren</h5>
+          <a type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </a>
+        </div>
+        <div class="modal-body">
+          <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
+          <fieldset>
+
+            <input type="text" class="form-control mb-2" name="Name" placeholder="Name" required>
+            <input type="text" class="form-control mb-2" name="Email/Handy" placeholder="Email oder Handynummer"
+              required>
+            <legend>Ihr Hund</legend>
+            <input type="text" class="form-control mb-2" name="Hundename" placeholder="Name des Hundes" required>
+            <div class="row">
+              <div class="col-8">
+                <input type="text" class="form-control mb-2" name="Hunderasse" placeholder="Rasse" required>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control mb-2" name="Alter" placeholder="Alter" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Terminwunsch</legend>
+            <p>Unsere Öffnungszeiten: <br>von Dienstag bis Samstag (10:00 bis 18:00).</p>
+            <input id="date" type="date" class="form-control datepicker mb-2" name="Gewünschtes Datum"
+              placeholder="Tag wählen">
+
+            <div class="form-group mb-2">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Gewünschte Zeit" id="inlineRadio1" value="Vor 14:00">
+                <label class="form-check-label" for="inlineRadio1">Vor 14:00</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Gewünschte Zeit" id="inlineRadio2"
+                  value="Nach 14:00">
+                <label class="form-check-label" for="inlineRadio2">Nach 14:00</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Gewünschte Zeit" id="inlineRadio3" value="Egal wann">
+                <label class="form-check-label" for="inlineRadio3">Egal wann</label>
+              </div>
+            </div>
+
+          </fieldset>
+          <fieldset>
+            <legend>Dienstleistungen</legend>
+            <div class="form-control mb-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="Basispflege" value="Ja" checked> Basispflege
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="Basispflege + Entfernung der Unterwolle"
+                  value="Ja"> Basispflege + Entfernung der Unterwolle
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="Basispflege + Rasieren mit Schermaschine"
+                  value="Ja"> Basispflege + Rasieren mit Schermaschine
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="Basispflege + Frisur" value="Ja"> Basispflege +
+                Frisur
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="Express-Häutung" value="Ja"> Express-Häutung
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="Basispflege + Trimmen" value="Ja"> Basispflege +
+                Trimmen
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="Welpeneingewöhnung" value="Ja"> Welpeneingewöhnung
+              </div>
+            </div>
+          </fieldset>
+
+          <!--Tech Info-->
+          <input type="hidden" name="_subject" value="Neuer Termin">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://kramarus.github.io/hundesalon/thanks.html">
+          <!--Change this!!!-->
+          <textarea class="form-control mb-2" type="textarea" rows="3" placeholder="Kommentar"
+            name="Kommentar"></textarea>
+          <div>
+            <button class="btn btn-custom1" type="submit" value="Newsletter">
+              Senden
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--Services-->
+  <section class="bg-custom2 py-5" id="services">
+    <div class="container">
+      <h2 class="mb-5 text-center">Dienstleistungen</h2>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="card service-card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Basispflege</h5>
+
               <p class="card-text">
-              Kleine Hunde 
+                Die Basispflege umfasst: Ohr- und Augenhygiene, Krallenschneiden,
+                trimmen des Intimbereichs, Fellschnitt an Augen und
+                Pfoten (falls erforderlich).
+                Waschen in drei Stufen mit Superreinigungsshampoo, Pflegeshampoo
+                und Conditioner. Föhnen und Kämmen.
+              </p>
+              <p class="text-center">
+                Preise*
               <p class="card-text">
-              bis 5 kg/5-10 kg - 40 Euro/50 Euro
+                Kleine Hunde
               <p class="card-text">
-              Mittlere Hunde
+                bis 5 kg/5-10 kg - 40 Euro/50 Euro
               <p class="card-text">
-              10-20 kg - 60 Euro
+                Mittlere Hunde
               <p class="card-text">
-              Große Hunde 
+                10-20 kg - 60 Euro
               <p class="card-text">
-              20-30 kg/30-40 kg - 70 Euro/85 Euro
+                Große Hunde
+              <p class="card-text">
+                20-30 kg/30-40 kg - 70 Euro/85 Euro
               <p class="card-text">
                 *Bei starken Verfilzungen können höhere Preise anfallen
               </p>
-                <div class="d-flex justify-content-center">
-              
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="card service-card">
-              <div class="card-body">
-                <h5 class="card-title text-center">Basispflege + Entfernung der Unterwolle</h5>
-                <p class="card-text">
-                  Nach dem Baden und Hygieneverfahren wird das Fell geföhnt und die Unterwolle mit
-verschiedenen Werkzeugen ausgekämmt und gleichzeitig mit einem professionellem 
-Kompressor ausgeblasen. Je nach Rasse ist eventuell auch ein Konturschnitt möglich.
-                </p>
-                <p class="text-center">Preise*</p>
-                <p class="card-text">
-                  Kleine Hunde 
-                  <p class="card-text">
-                  bis 5 kg/5-10 kg - 80 Euro/95 Euro
-                  <p class="card-text">
-                  Mittlere Hunde
-                  <p class="card-text">
-                  10-20 kg - 110 Euro
-                  <p class="card-text">
-                  Große Hunde 
-                  <p class="card-text">
-                  20-30 kg/30-40 kg - 130 Euro/150 Euro
-                  <p class="card-text">
-                    *Bei starken Verfilzungen können höhere Preise anfallen
-                  </p>
+              <div class="d-flex justify-content-center">
 
-                <div class="d-flex justify-content-center">
-                  
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="card service-card">
-              <div class="card-body">
-                <h5 class="card-title text-center">Basispflege + Rasieren mit Schermaschine</h5>
-                <p class="text-center">Preise*</p>
-                <p class="card-text">
-                  Kleine Hunde 
-                  <p class="card-text">
-                  bis 5 kg/5-10 kg - 50 Euro/60 Euro
-                  <p class="card-text">
-                  Mittlere Hunde
-                  <p class="card-text">
-                  10-20 kg - 75 Euro
-                  <p class="card-text">
-                  Große Hunde 
-                  <p class="card-text">
-                  20-30 kg/30-40 kg - 90 Euro/110 Euro
-                  <p class="card-text">
-                    *Bei starken Verfilzungen können höhere Preise anfallen  
-                </p>
-                <div class="d-flex justify-content-center">
-                 
-                </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="card service-card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Basispflege + Entfernung der Unterwolle</h5>
+              <p class="card-text">
+                Nach dem Baden und Hygieneverfahren wird das Fell geföhnt und die Unterwolle mit
+                verschiedenen Werkzeugen ausgekämmt und gleichzeitig mit einem professionellem
+                Kompressor ausgeblasen. Je nach Rasse ist eventuell auch ein Konturschnitt möglich.
+              </p>
+              <p class="text-center">Preise*</p>
+              <p class="card-text">
+                Kleine Hunde
+              <p class="card-text">
+                bis 5 kg/5-10 kg - 80 Euro/95 Euro
+              <p class="card-text">
+                Mittlere Hunde
+              <p class="card-text">
+                10-20 kg - 110 Euro
+              <p class="card-text">
+                Große Hunde
+              <p class="card-text">
+                20-30 kg/30-40 kg - 130 Euro/150 Euro
+              <p class="card-text">
+                *Bei starken Verfilzungen können höhere Preise anfallen
+              </p>
+
+              <div class="d-flex justify-content-center">
+
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="card service-card">
-              <div class="card-body">
-                <h5 class="card-title text-center">Basispflege + Frisur (handgeschnitten mit Schere und Schermaschine) </h5>
-                <p class="text-center">Preise*</p>
-                <p class="card-text">
-                  Kleine Hunde 
-                  <p class="card-text">
-                  bis 5 kg/5-10 kg - 70 Euro/80 Euro
-                  <p class="card-text">
-                  Mittlere Hunde
-                  <p class="card-text">
-                  10-20 kg - 100 Euro
-                  <p class="card-text">
-                  Große Hunde 
-                  <p class="card-text">
-                  20-30 kg/30-40 kg - 120 Euro/140 Euro
-                  <p class="card-text">
-                    *Bei starken Verfilzungen können höhere Preise anfallen 
-                </p>
-                <div class="d-flex justify-content-center">
-                
-                </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="card service-card">
+            <div class="card-body">
+            
+              <h5 class="card-title text-center">Basispflege + Frisur</h5>
+              <h5 class="card-title text-center">Sommerangebot</h5>
+              <p class="text-center">Preise*</p>
+              <p class="card-text">
+                Kleine Hunde
+              <p class="card-text">
+                bis 5 kg/5-10 kg - 55 Euro/65 Euro
+              <p class="card-text">
+                Mittlere Hunde
+              <p class="card-text">
+                10-20 kg - 80 Euro
+              <p class="card-text">
+                Große Hunde
+              <p class="card-text">
+                20-30 kg/30-40 kg - 95 Euro/115 Euro
+              <p class="card-text">
+                *Bei starken Verfilzungen können höhere Preise anfallen
+              </p>
+              <div class="d-flex justify-content-center">
+
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="card service-card">
-              <div class="card-body">
-                <h5 class="card-title text-center">Express-Häutung</h5>
-                
-                <p class="card-text">
-                  Empfohlen für kurzhaarige und schuppende Hunderassen wie etwa Mops, Bulldog. 
-                 Abgestorbene Fellpartikel bereiten dem Hund Beschwerden, 
-                und verschmutzen Wohnung und Kleider. Um das zu vermeiden kann durch eine spezielle 
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="card service-card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Basispflege + Frisur</h5>
+              <p class="text-center">Preise*</p>
+              <p class="card-text">
+                Kleine Hunde
+              <p class="card-text">
+                bis 5 kg/5-10 kg - 70 Euro/80 Euro
+              <p class="card-text">
+                Mittlere Hunde
+              <p class="card-text">
+                10-20 kg - 100 Euro
+              <p class="card-text">
+                Große Hunde
+              <p class="card-text">
+                20-30 kg/30-40 kg - 120 Euro/140 Euro
+              <p class="card-text">
+                *Bei starken Verfilzungen können höhere Preise anfallen
+              </p>
+              <div class="d-flex justify-content-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="card service-card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Express-Häutung</h5>
+
+              <p class="card-text">
+                Empfohlen für kurzhaarige und schuppende Hunderassen wie etwa Mops, Bulldog.
+                Abgestorbene Fellpartikel bereiten dem Hund Beschwerden,
+                und verschmutzen Wohnung und Kleider. Um das zu vermeiden kann durch eine spezielle
                 Reihe von Behandlungen der Häutungsprozess beschleunigt und abgestorbene Wolle
                 entfernt werden.
-                <p class="card-text"></p>
-                Die Express-Häutung umfasst: Ohr- und Augenhygiene, Krallenschneiden, 
-                Waschen mit Shampoo, Schlammbad mit Madra Mor Shed Safely Mud. 
-                Föhnen und Auskämmen abgestorbener Haare mit spezialen Werkzeugen.
-                 </p>
-                <p class="text-center">Preise</p>
-                <p class="card-text">
-                  Kleine Hunde 
-                  <p class="card-text">
-                  bis 5 kg/5-10 kg - 45 Euro/55 Euro
-                  <p class="card-text">
-                  Mittlere Hunde
-                  <p class="card-text">
-                  10-20 kg - 70 Euro
-                  <p class="card-text">
-                  Große Hunde 
-                  <p class="card-text">
-                  20-30 kg/30-40 kg - 80 Euro/100 Euro
-                <div class="d-flex justify-content-center">
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="card service-card">
-              <div class="card-body">
-                <h5 class="card-title text-center">Basispflege + Trimmen</h5>
-                <p class="text-center">Preise</p>
-                <p class="card-text">
-                  Jagdterrier 80 Euro
-                <p class="card-text">
-                  Rauhaardackel 80-90 Euro
-                <p class="card-text">
-                  Jack Russel Terrier 80-90 Euro
-                  <p class="card-text">
-                    Border Terrier 90 Euro
-                    <p class="card-text">
-                      Brüsseler Griffon 90 Euro
-                      <p class="card-text">
-                        Fox Terrier, Norfolk Terrier, Scottisch Terrier, Norwich Terrier,
-                        Zwergschnauzer, Cairn Terrier, West Highland White Terrier 105 Euro
-                        <p class="card-text">
-                          Irisch Terrier, Welsch Terrier, Mittelschnauzer 125 Euro
-                          <p class="card-text">
-                            Airedale Terrier, Riesenschnauzer 150 Euro
-                          </p>
-                        </p>
-                      </p>
-                    </p>
-                  </p>
-                  
-                </p>
-              
-                </div>
-              </div>
-             
-            </div>
-          </div>
-          <div class="col-12 mb-3">
-            <div class="card service-card">
-              <div class="card-header bg-danger-a text-light text-center pt-3" style="background-color:rgba(148, 55, 12, 0.886)">
-                <h4>Sommerangebot</h4>
-                <p>Vom 22 Mai bis 1 September Angebot: Jeden Montag von 14 Uhr bis 18 Uhr 
-                  Krallenschneiden ohne Termin nur 8 Euro</p>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center">Krallenschneiden</h5>
-                
-                <p class="card-text">
-                  Das Krallenschneiden ist eine notwendige Prozedur, 
-                  die Ihrem Hund einen schmerzlosen und komfortablen Gang bietet. 
-                  Krallenschneiden sollte immer in einer ruhigen Atmosphäre erfolgen.
-                  Je öfter Krallen geschnitten werden, desto weiter geht 
-                  das Blutgefäß in die Tiefe und umso kürzer werden die Krallen.
-                  Es wird empfohlen, zweimal im Monat Krallen zu schneiden, 
-                  damit sie nicht auswachsen.</p>
+              <p class="card-text"></p>
+              Die Express-Häutung umfasst: Ohr- und Augenhygiene, Krallenschneiden,
+              Waschen mit Shampoo, Schlammbad mit Madra Mor Shed Safely Mud.
+              Föhnen und Auskämmen abgestorbener Haare mit spezialen Werkzeugen.
+              </p>
+              <p class="text-center">Preise</p>
+              <p class="card-text">
+                Kleine Hunde
+              <p class="card-text">
+                bis 5 kg/5-10 kg - 45 Euro/55 Euro
+              <p class="card-text">
+                Mittlere Hunde
+              <p class="card-text">
+                10-20 kg - 70 Euro
+              <p class="card-text">
+                Große Hunde
+              <p class="card-text">
+                20-30 kg/30-40 kg - 80 Euro/100 Euro
+              <div class="d-flex justify-content-center">
 
-                
-                <div class="d-flex justify-content-center">
-                  
-                </div>
               </div>
             </div>
           </div>
-          
-          <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="card service-card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Basispflege + Trimmen</h5>
+              <p class="text-center">Preise</p>
+              <p class="card-text">
+                Jagdterrier 80 Euro
+              <p class="card-text">
+                Rauhaardackel 80-90 Euro
+              <p class="card-text">
+                Jack Russel Terrier 80-90 Euro
+              <p class="card-text">
+                Border Terrier 90 Euro
+              <p class="card-text">
+                Brüsseler Griffon 90 Euro
+              <p class="card-text">
+                Fox Terrier, Norfolk Terrier, Scottisch Terrier, Norwich Terrier,
+                Zwergschnauzer, Cairn Terrier, West Highland White Terrier 105 Euro
+              <p class="card-text">
+                Irisch Terrier, Welsch Terrier, Mittelschnauzer 125 Euro
+              <p class="card-text">
+                Airedale Terrier, Riesenschnauzer 150 Euro
+              </p>
+              </p>
+              </p>
+              </p>
+              </p>
 
-            <div class="card service-card">
-        
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 mb-3">
+        <div class="card service-card">
+          <div class="card-header bg-danger-a text-light text-center pt-3"
+            style="background-color:rgba(148, 55, 12, 0.886)">
+            <h4>Sommerangebot</h4>
+            <p>Vom 22 Mai bis 1 September Angebot: Jeden Montag von 14 Uhr bis 18 Uhr
+              Krallenschneiden ohne Termin nur 8 Euro</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Krallenschneiden</h5>
+
+            <p class="card-text">
+              Das Krallenschneiden ist eine notwendige Prozedur,
+              die Ihrem Hund einen schmerzlosen und komfortablen Gang bietet.
+              Krallenschneiden sollte immer in einer ruhigen Atmosphäre erfolgen.
+              Je öfter Krallen geschnitten werden, desto weiter geht
+              das Blutgefäß in die Tiefe und umso kürzer werden die Krallen.
+              Es wird empfohlen, zweimal im Monat Krallen zu schneiden,
+              damit sie nicht auswachsen.</p>
+
+
+            <div class="d-flex justify-content-center">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+
+        <div class="card service-card">
+
           <div class="card-body">
             <h5 class="card-title text-center">Schlammbad</h5>
-            
+
             <p class="card-text">
-              Das Schlammbad ist eine zur Basispflege zusätzlicher Badevorgang 
-            in dem amerikanische Kosmetik Madra Mor verwendet wird. Es handelt sich dabei
-            um eine sehr natürliche Art und Weise der Reinigung und hat eine besonders
-            heilende Wirkung auf die Haut und das Fell.
+              Das Schlammbad ist eine zur Basispflege zusätzlicher Badevorgang
+              in dem amerikanische Kosmetik Madra Mor verwendet wird. Es handelt sich dabei
+              um eine sehr natürliche Art und Weise der Reinigung und hat eine besonders
+              heilende Wirkung auf die Haut und das Fell.
             </p>
             <p class="text-center">Preise</p>
-                <p class="card-text">
-                  Kleine Hunde 
-                  bis 10 kg - 5-10 Euro
-                  <p class="card-text">
-                  Mittlere Hunde
-                  10-20 kg - 15-20 Euro
-                  <p class="card-text">
-                  Große Hunde 
-                  20-40 kg - 25-30 Euro
-                <div class="d-flex justify-content-center">
+            <p class="card-text">
+              Kleine Hunde
+              bis 10 kg - 5-10 Euro
+            <p class="card-text">
+              Mittlere Hunde
+              10-20 kg - 15-20 Euro
+            <p class="card-text">
+              Große Hunde
+              20-40 kg - 25-30 Euro
+            <div class="d-flex justify-content-center">
 
 
-        </div>
-          
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+      <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
 
-      <div class="card service-card">
-  
-    <div class="card-body">
-      <h5 class="card-title text-center">Welpeneingewöhnung
-      </h5>
-      
-      <p class="card-text">
-        Für Welpen im Alter von 3 bis 8 Monaten direkt nach der Impfung.</p>
-        <p class="text-center">Preise</p>
-                <p class="card-text">
-                  Kleine Hunde - 25 Euro
-                  <p class="card-text">
-                  Mittlere Hund - 35 Euro
-                  <p class="card-text">
-                  Große Hunde - 45 Euro
+        <div class="card service-card">
+
+          <div class="card-body">
+            <h5 class="card-title text-center">Welpeneingewöhnung
+            </h5>
+
+            <p class="card-text">
+              Für Welpen im Alter von 3 bis 8 Monaten direkt nach der Impfung.</p>
+            <p class="text-center">Preise</p>
+            <p class="card-text">
+              Kleine Hunde - 25 Euro
+            <p class="card-text">
+              Mittlere Hund - 35 Euro
+            <p class="card-text">
+              Große Hunde - 45 Euro
 
 
-    
-      </div>
-    </section>
-    <!--
+
+          </div>
+  </section>
+  <!--
       Zähneputzen: 
       : 
       Fellpflege: Eine professionelle Fellpflege kann das Fell des Hundes gesünder und glänzender machen. Hierbei werden spezielle Pflegeprodukte auf das Fell aufgetragen und sanft eingearbeitet.
     -->
-    <section class="bg-custom1 py-5" id="about">
-      <div class="container">
-        <h2 class="mb-5 text-center display-4">
-          Ich heiße Katja und ich bin Hundefriseurin.
-        </h2>
-        <div class="row">
-          <div class="col-lg-12 col-12 d-flex align-items-center">
-            <div class="fs-5">
-              <p>
-                Mein Hundesalon ist modern und sauber, um sicherzustellen,
-                dass Ihr Hund in einer sicheren Umgebung gepflegt wird. 
-               <p>
+  <section class="bg-custom1 py-5" id="about">
+    <div class="container">
+      <h2 class="mb-5 text-center display-4">
+        Ich heiße Katja und ich bin Hundefriseurin.
+      </h2>
+      <div class="row">
+        <div class="col-lg-12 col-12 d-flex align-items-center">
+          <div class="fs-5">
+            <p>
+              Mein Hundesalon ist modern und sauber, um sicherzustellen,
+              dass Ihr Hund in einer sicheren Umgebung gepflegt wird.
+            <p>
 
-               </p> 
-                Mein Ziel ist es, Ihrem Hund eine angenehme Erfahrung zu bieten
-                und ihn mit einem frischen Look nach Hause zu schicken. Mir ist wichtig, dass Sie als Besitzer mit meiner Arbeit
-                zufrieden sind und sich auf mich verlassen können.
-              </p>
+            </p>
+            Mein Ziel ist es, Ihrem Hund eine angenehme Erfahrung zu bieten
+            und ihn mit einem frischen Look nach Hause zu schicken. Mir ist wichtig, dass Sie als Besitzer mit meiner
+            Arbeit
+            zufrieden sind und sich auf mich verlassen können.
+            </p>
 
-              <p>
-                Wenn Sie auf der Suche nach einem professionellen
-                Hundepflegedienst sind, dann sind Sie bei mir genau richtig!
-                Kontaktieren Sie mich für weitere Informationen oder
-                um einen Termin zu vereinbaren. Ich freue mich darauf, Ihnen und
-                Ihrem Hund zu helfen!
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            
+            <p>
+              Wenn Sie auf der Suche nach einem professionellen
+              Hundepflegedienst sind, dann sind Sie bei mir genau richtig!
+              Kontaktieren Sie mich für weitere Informationen oder
+              um einen Termin zu vereinbaren. Ich freue mich darauf, Ihnen und
+              Ihrem Hund zu helfen!
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="bg-custom2 py-5" id="contacts">
-      <div class="container">
-        <h2 class="mb-3 text-center">Kontakte</h2>
-        <div class="row">
-          <div class="col-md-6 col-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.54809523097!2d7.663241224904398!3d51.996889837937445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9bb2bbb97a6c1%3A0x3395a192647e615c!2sHundesalon%20Emika!5e0!3m2!1sde!2sde!4v1679478665815!5m2!1sde!2sde"
-              width="100%"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="col-md-6 col-12">
-            <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
-              <div class="form-group my-3">
-                <label for="formGroupExampleInput">Ihr Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="formGroupExampleInput"
-                  name="Name"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="form-group my-3">
-                <label for="exampleFormControlInput1">Ihre Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  name="Email"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <div class="form-group my-3">
-                <label for="exampleFormControlTextarea1">Ihre Nachricht</label>
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  name="Nachricht"
-                  rows="3"
-                ></textarea>
-              </div>
-              <input type="hidden" name="_subject" value="Neue Nachricht">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://kramarus.github.io/hundesalon/thanks.html">
-              <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-secondary mb-2">
-                  Senden
-                </button>
-              </div>
-            </form>
-          </div>
+        <div class="col-lg-4 col-12">
+
         </div>
       </div>
-    </section>
-    <section>
-      <div class="container text-center">
-        <button
-        class="btn btn-lg btn-custom1 font-weight-bold mt-3 mt-md-4 px-4"
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#termin"
-      >
+    </div>
+  </section>
+  <section class="bg-custom2 py-5" id="contacts">
+    <div class="container">
+      <h2 class="mb-3 text-center">Kontakte</h2>
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.54809523097!2d7.663241224904398!3d51.996889837937445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9bb2bbb97a6c1%3A0x3395a192647e615c!2sHundesalon%20Emika!5e0!3m2!1sde!2sde!4v1679478665815!5m2!1sde!2sde"
+            width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6 col-12">
+          <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
+          <div class="form-group my-3">
+            <label for="formGroupExampleInput">Ihr Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" name="Name" placeholder="Name" />
+          </div>
+          <div class="form-group my-3">
+            <label for="exampleFormControlInput1">Ihre Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" name="Email"
+              placeholder="name@example.com" />
+          </div>
+          <div class="form-group my-3">
+            <label for="exampleFormControlTextarea1">Ihre Nachricht</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="Nachricht" rows="3"></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="Neue Nachricht">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://kramarus.github.io/hundesalon/thanks.html">
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-secondary mb-2">
+              Senden
+            </button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container text-center">
+      <button class="btn btn-lg btn-custom1 font-weight-bold mt-3 mt-md-4 px-4" type="button" class="btn btn-primary"
+        data-bs-toggle="modal" data-bs-target="#termin">
         <strong>Termin vereinbaren</strong>
       </button>
-      </div>
-      
-    </section>
-    <footer class="py-5">
-      <div class="container">
-        <div class="row my-5">
-          
-          <div class="col-lg-10 col-12">
-            <div class="row">
-              <div class="col-lg-6 col-12 col-md-6 contacts">
-                <h3>Kontakte</h3>
-                <ul>
-                  <li>
-                    Handy: <a href="tel:+491786572178">+49 1788179912</a>
-                  </li>
-                 <li>Email: emikagroomer@gmail.com</li>
-                  <li>
-                    Adresse: An der Alten Ziegelei 36 A, 48157 Münster
-                  </li>
-                </ul>
+    </div>
+
+  </section>
+  <footer class="py-5">
+    <div class="container">
+      <div class="row my-5">
+
+        <div class="col-lg-10 col-12">
+          <div class="row">
+            <div class="col-lg-6 col-12 col-md-6 contacts">
+              <h3>Kontakte</h3>
+              <ul>
+                <li>
+                  Handy: <a href="tel:+491786572178">+49 1788179912</a>
+                </li>
+                <li>Email: emikagroomer@gmail.com</li>
+                <li>
+                  Adresse: An der Alten Ziegelei 36 A, 48157 Münster
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-12 col-md-6 links">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="#hero">Hauptseite</a></li>
+                <li><a href="#services">Dienstleistungen</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#contacts">Kontakt</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-12 col-md-6">
+              <h3>Newsletter</h3>
+              <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
+              <div class="newsletter">
+                <input type="email" class="form-control" name="Email" id="exampleFormControlInput1"
+                  placeholder="name@example.com" />
+                <input type="hidden" name="_subject" value="Newsletter">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://kramarus.github.io/hundesalon/thanks.html">
+                <button class="btn btn-secondary" type="submit" value="Newsletter">
+                  Newsletter
+                </button>
               </div>
-              <div class="col-lg-3 col-12 col-md-6 links">
-                <h3>Links</h3>
-                <ul>
-                  <li><a href="#hero">Hauptseite</a></li>
-                  <li><a href="#services">Dienstleistungen</a></li>
-                  <li><a href="#about">Über mich</a></li>
-                  <li><a href="#contacts">Kontakt</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-12 col-md-6">
-                <h3>Newsletter</h3>
-                <form action="https://formsubmit.co/13789676fc8fe456407a7cb73ca52bc7" method="POST" />
-                  <div class="newsletter">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="Email"
-                      id="exampleFormControlInput1"
-                      placeholder="name@example.com"
-                    />
-                    <input type="hidden" name="_subject" value="Newsletter">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://kramarus.github.io/hundesalon/thanks.html">
-                    <button
-                      class="btn btn-secondary"
-                      type="submit"
-                      value="Newsletter"
-                    >
-                      Newsletter
-                    </button>
-                  </div>
-                </form>
-              </div>
+              </form>
             </div>
           </div>
         </div>
-   
-        <div class="row">
-          <div class="col-lg-12 col-12 text-center">AGB | Impressum</div>
-        </div>
       </div>
-    </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript">
-      const picker = document.getElementById('date');
-       picker.addEventListener('input', function(e){
-         var day = new Date(this.value).getUTCDay();
-         if([0,1].includes(day)){
-           e.preventDefault();
-           this.value = '';
-           alert('Unsere Öffnungszeiten: von Dienstag bis Samstag');
-         }
-       });
-   </script>
-  </body>
+      <div class="row">
+        <div class="col-lg-12 col-12 text-center">AGB | Impressum</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    const picker = document.getElementById('date');
+    picker.addEventListener('input', function (e) {
+      var day = new Date(this.value).getUTCDay();
+      if ([0, 1].includes(day)) {
+        e.preventDefault();
+        this.value = '';
+        alert('Unsere Öffnungszeiten: von Dienstag bis Samstag');
+      }
+    });
+  </script>
+</body>
+
 </html>
